@@ -1,107 +1,184 @@
-# React
+# TechVision 2025 - Conference Landing Page
 
-A modern React-based project utilizing the latest frontend technologies and tools for building responsive web applications.
+A modern, responsive landing page for the TechVision 2025 technology conference built with React, Vite, and Tailwind CSS.
 
 ## 🚀 Features
 
-- **React 18** - React version with improved rendering and concurrent features
-- **Vite** - Lightning-fast build tool and development server
-- **Redux Toolkit** - State management with simplified Redux setup
-- **TailwindCSS** - Utility-first CSS framework with extensive customization
-- **React Router v6** - Declarative routing for React applications
-- **Data Visualization** - Integrated D3.js and Recharts for powerful data visualization
-- **Form Management** - React Hook Form for efficient form handling
-- **Animation** - Framer Motion for smooth UI animations
-- **Testing** - Jest and React Testing Library setup
+- **Modern Design**: Clean, professional design with dark theme
+- **Responsive**: Fully responsive across all devices
+- **Performance Optimized**: Built with Vite for fast builds and optimal performance
+- **SEO Ready**: Meta tags, sitemap, and robots.txt included
+- **Accessibility**: WCAG compliant components and navigation
+- **Analytics Ready**: Conversion tracking and user behavior monitoring
+- **Deployment Ready**: Configured for Netlify and Vercel deployment
 
-## 📋 Prerequisites
+## 🛠️ Tech Stack
 
-- Node.js (v14.x or higher)
-- npm or yarn
+- **Frontend**: React 18, Vite 5
+- **Styling**: Tailwind CSS, PostCSS
+- **Routing**: React Router DOM
+- **UI Components**: Radix UI, Framer Motion, Lucide React
+- **Forms**: React Hook Form
+- **Charts**: Recharts, D3.js
+- **Build Tool**: Vite
+- **Package Manager**: npm
 
-## 🛠️ Installation
+## 📦 Installation
 
-1. Install dependencies:
+1. **Clone the repository**
+
+   ```bash
+   git clone <repository-url>
+   cd techvision_2025
+   ```
+
+2. **Install dependencies**
+
    ```bash
    npm install
-   # or
-   yarn install
    ```
-   
-2. Start the development server:
+
+3. **Start development server**
+
    ```bash
    npm start
-   # or
-   yarn start
    ```
+
+4. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+## 🏗️ Available Scripts
+
+- `npm start` - Start development server
+- `npm run build` - Build for production
+- `npm run serve` - Preview production build
+
+## 🚀 Deployment
+
+### Netlify Deployment
+
+1. **Connect your repository** to Netlify
+2. **Build settings**:
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+3. **Deploy** - Netlify will automatically detect the `netlify.toml` configuration
+
+### Vercel Deployment
+
+1. **Connect your repository** to Vercel
+2. **Framework preset**: Vite
+3. **Deploy** - Vercel will automatically detect the `vercel.json` configuration
+
+### Manual Deployment
+
+1. **Build the project**
+
+   ```bash
+   npm run build
+   ```
+
+2. **Upload the `dist` folder** to your hosting provider
 
 ## 📁 Project Structure
 
 ```
-react_app/
-├── public/             # Static assets
-├── src/
-│   ├── components/     # Reusable UI components
-│   ├── pages/          # Page components
-│   ├── styles/         # Global styles and Tailwind configuration
-│   ├── App.jsx         # Main application component
-│   ├── Routes.jsx      # Application routes
-│   └── index.jsx       # Application entry point
-├── .env                # Environment variables
-├── index.html          # HTML template
-├── package.json        # Project dependencies and scripts
-├── tailwind.config.js  # Tailwind CSS configuration
-└── vite.config.js      # Vite configuration
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # Base UI components (Button, Input, etc.)
+│   ├── ErrorBoundary.jsx
+│   ├── ScrollToTop.jsx
+│   └── ...
+├── pages/              # Page components
+│   ├── landing-page/   # Main landing page
+│   │   ├── components/ # Landing page sections
+│   │   └── index.jsx
+│   └── NotFound.jsx
+├── styles/             # CSS and Tailwind styles
+├── utils/              # Utility functions
+├── App.jsx             # Main app component
+├── Routes.jsx          # Routing configuration
+└── index.jsx           # Entry point
 ```
 
-## 🧩 Adding Routes
+## 🎨 Customization
 
-To add new routes to the application, update the `Routes.jsx` file:
+### Colors and Theme
 
-```jsx
-import { useRoutes } from "react-router-dom";
-import HomePage from "pages/HomePage";
-import AboutPage from "pages/AboutPage";
+The project uses CSS custom properties for theming. Edit `src/styles/tailwind.css` to customize:
 
-const ProjectRoutes = () => {
-  let element = useRoutes([
-    { path: "/", element: <HomePage /> },
-    { path: "/about", element: <AboutPage /> },
-    // Add more routes as needed
-  ]);
+- Primary colors
+- Accent colors
+- Background colors
+- Typography
 
-  return element;
-};
-```
+### Content
 
-## 🎨 Styling
+Update content in the respective component files:
 
-This project uses Tailwind CSS for styling. The configuration includes:
+- `src/pages/landing-page/components/HeroSection.jsx`
+- `src/pages/landing-page/components/SpeakerShowcase.jsx`
+- `src/pages/landing-page/components/PricingSection.jsx`
+- And other section components
 
-- Forms plugin for form styling
-- Typography plugin for text styling
-- Aspect ratio plugin for responsive elements
-- Container queries for component-specific responsive design
-- Fluid typography for responsive text
-- Animation utilities
+### SEO
 
-## 📱 Responsive Design
+Update meta tags in `src/pages/landing-page/index.jsx`:
 
-The app is built with responsive design using Tailwind CSS breakpoints.
+- Title
+- Description
+- Keywords
+- Open Graph tags
+- Twitter cards
 
+## 🔧 Configuration Files
 
-## 📦 Deployment
+- `vite.config.js` - Vite build configuration
+- `tailwind.config.js` - Tailwind CSS configuration
+- `postcss.config.js` - PostCSS configuration
+- `netlify.toml` - Netlify deployment configuration
+- `vercel.json` - Vercel deployment configuration
 
-Build the application for production:
+## 📊 Performance
 
-```bash
-npm run build
-```
+The build is optimized with:
 
-## 🙏 Acknowledgments
+- Code splitting for better loading performance
+- Manual chunk configuration for optimal caching
+- Source maps for debugging
+- Gzip compression ready
+- Asset optimization
 
-- Built with [Rocket.new](https://rocket.new)
-- Powered by React and Vite
-- Styled with Tailwind CSS
+## 🔒 Security
 
-Built with ❤️ on Rocket.new
+Security headers are configured for:
+
+- X-Frame-Options
+- X-XSS-Protection
+- X-Content-Type-Options
+- Referrer-Policy
+
+## 📈 Analytics
+
+The project includes conversion tracking for:
+
+- Section views
+- Scroll depth
+- Time on page
+- Navigation clicks
+- Form submissions
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 🆘 Support
+
+For support, email support@techvision2025.com or create an issue in the repository.

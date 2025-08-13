@@ -9,10 +9,10 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Sarah Mitchell",
+      name: "Samuel Mitchell",
       title: "Senior Software Engineer",
       company: "Google",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
       content: `TechVision 2024 was a game-changer for my career. The networking opportunities were incredible - I connected with my current manager at Google during the VIP dinner. The sessions on AI and machine learning gave me the knowledge I needed to transition into ML engineering. Within 6 months, I had a 40% salary increase and my dream job.`,
       outcome: "40% salary increase, dream job at Google",
       rating: 5,
@@ -31,10 +31,10 @@ const TestimonialsSection = () => {
     },
     {
       id: 3,
-      name: "Dr. Priya Sharma",
+      name: "Dr. Priyansh Sharma",
       title: "Head of Data Science",
       company: "Microsoft",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=face",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
       content: `The quantum computing sessions at TechVision opened my eyes to possibilities I hadn't considered. I met the IBM Quantum team and learned about opportunities in quantum machine learning. Six months later, I was leading Microsoft's quantum AI research division. The conference literally changed my career trajectory.`,
       outcome: "Promoted to Head of Quantum AI Research",
       rating: 5,
@@ -53,10 +53,10 @@ const TestimonialsSection = () => {
     },
     {
       id: 5,
-      name: "Jennifer Wu",
+      name: "Jonathan Wu",
       title: "Security Architect",
       company: "Cloudflare",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
       content: `TechVision's cybersecurity track was phenomenal. I learned about zero-trust architecture from industry leaders and implemented it at my company within 3 months. The hands-on workshops and real-world case studies made complex concepts immediately actionable. It's the best professional development investment I've ever made.`,
       outcome: "Implemented zero-trust security, prevented major breach",
       rating: 5,

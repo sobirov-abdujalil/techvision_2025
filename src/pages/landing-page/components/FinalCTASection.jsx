@@ -266,7 +266,7 @@ const FinalCTASection = () => {
                 The connections I made led to my dream job at Google."
               </blockquote>
               <cite className="text-sm text-accent font-medium">
-                — Sarah Mitchell, Senior Software Engineer at Google
+                — Samuel Mitchell, Senior Software Engineer at Google
               </cite>
             </div>
           </div>
