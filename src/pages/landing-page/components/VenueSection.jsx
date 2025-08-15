@@ -28,7 +28,7 @@ const VenueSection = () => {
     demo: {
       title: "Demo Areas",
       description: "Interactive spaces where sponsors and speakers showcase cutting-edge technologies and innovations.",
-      image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=600&fit=crop",
       features: [
         "20+ interactive demo stations",
         "VR/AR experience zones",
